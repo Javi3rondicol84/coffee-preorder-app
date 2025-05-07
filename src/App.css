@@ -1,42 +1,22 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+    --black-color: #0D0801;
+    --white-color: #FFF1DF;
+    --dark-primary-color: #B09676;
+    --primary-color: #D3BEA4;
+    --text-titles-color: #715430;
+    --font-color: #3B2F2F;
+    --nav-footer-text-color: #D3BEA4;
+    --accent-color: #213948;
+    --accent-dark-color: #1a2b35;
+    --text-accent-color: #3A5D6C;
+    --text-accent-dark-color: #2D4653; 
+    --input-color: #373634;
+
+    --title-font: 'Pacifico';
+    --main-font: 'Poppins';
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+* {
+    font-family: var(--main-font);
+    font-weight: 400;
 }
