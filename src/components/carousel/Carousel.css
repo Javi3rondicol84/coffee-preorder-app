@@ -1,0 +1,11 @@
+.carousel {
+    margin-top: 1.5em;
+    width: 95%;
+}
+
+.cards {
+    width: 100%;
+    background-color: azure;
+    display: flex;
+    flex-wrap: wrap;
+}
