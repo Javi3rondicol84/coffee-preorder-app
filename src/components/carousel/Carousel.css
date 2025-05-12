@@ -1,11 +1,25 @@
 .carousel {
     margin-top: 1.5em;
     width: 95%;
+    overflow: hidden;
+
 }
 
 .cards {
-    width: 100%;
+    width: 1000%;
     background-color: azure;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+}
+
+@media only screen and (min-width: 600px) {
+    .carousel {
+        width: 90%;
+        overflow: hidden;
+    }
+
+    .cards {
+        width: 200%;
+        flex-wrap: nowrap;
+    }
 }
