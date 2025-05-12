@@ -1,5 +1,5 @@
 import './Carousel.css';
-import Card from '../card/card';
+import Card from '../card/Card';
 
 export default function Carousel( {id, title, items}) {
     {console.log(items)}

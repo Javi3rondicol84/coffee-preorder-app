@@ -1,8 +1,7 @@
-import cardImgGeneric from '../../assets/images/cardimggeneric.jpg';
 import blackCart from '../../assets/images/black-cart.svg';
 import './Card.css';
 
-export default function card( {id, title, description, price, img} ) {
+export default function Card( {id, title, description, price, img} ) {
     return (
         <>
             <div className='card'>
