@@ -59,6 +59,8 @@ nav .user-btn {
     height: 2em;
     margin-left: 0.5em;
     margin-right: 0.5em;
+    cursor: pointer;
+
 }
 
 nav .user-btn img {
@@ -69,6 +71,7 @@ nav .user-btn img {
 nav .cart-btn {
     width: 3em;
     height: 2em;
+    cursor: pointer;
 }
 
 nav .cart-btn img {

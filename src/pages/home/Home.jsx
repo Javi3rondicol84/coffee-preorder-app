@@ -2,6 +2,7 @@ import './Home.css';
 import coffeeBanner from '../../assets/images/coffee-banner.jpg';
 import { CAROUSELS } from '../../utils/carousels.js';
 import Carousel from '../../components/carousel/Carousel.jsx';
+import Cart from '../../components/cart/Cart.jsx';
 
 export default function Home() {
     return (
@@ -18,6 +19,9 @@ export default function Home() {
                         ))}
 
                     </div>
+
+                    <Cart />
+
                 </section>
             </main>
           

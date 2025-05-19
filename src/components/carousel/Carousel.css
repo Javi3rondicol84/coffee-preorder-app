@@ -2,7 +2,10 @@
     margin-top: 1.5em;
     width: 95%;
     overflow: hidden;
+}
 
+.carousel button {
+    visibility: hidden;
 }
 
 .cards {
@@ -16,10 +19,24 @@
     .carousel {
         width: 90%;
         overflow: hidden;
+        position: relative;
     }
 
     .cards {
         width: 200%;
         flex-wrap: nowrap;
+    }
+
+    .carousel button {
+        position: absolute;
+        visibility: visible;
+    }
+
+    .btn-left {
+        left: 0;
+    }
+
+    .btn-right {
+        right: 0;
     }
 }
