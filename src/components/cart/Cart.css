@@ -12,18 +12,19 @@
 
 .cart-content {
     width: 90%;
-    height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .cart-title {
     outline: 0;
-    border-bottom: 0.15em solid black;
-    margin-bottom: 1em;
     margin-top: 0.5em;
     display: flex;
     justify-content: space-between;
+}
+
+.cart-items {
+    margin-top: 1em;
 }
 
 .cart-title h2 {
@@ -63,10 +64,44 @@
     transform: rotate(-140deg);
 }
 
+.purchase {
+    margin-top: 0.5em;
+}
 
+.purchase .total span {
+    font-size: 1.8em;
+}
 
-@media only screen and (min-width: 600px) {
+.purchase-btn button {
+    width: 100%;
+    height: 5.5em;
+    background-color: var(--accent-color);
+    margin-top: 1em;
+    border-radius: 0.8em;
+    border: 0;
+    cursor: pointer;
+}
+
+.purchase-btn button span {
+    font-size: 2em;
+    color: var(--white-color);
+}
+
+.line {
+    width: 100%;
+    height: 0.15em;
+    background-color: black;
+    margin-top: 0.5em;
+}
+
+@media only screen and (min-width: 800px) {
     .cart-menu {
-        width: 40%;
+        width: 30%;
+    }
+
+    .cart-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

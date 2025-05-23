@@ -13,7 +13,7 @@ function showCards(direction) {
 
 
 export default function Carousel( {id, title, items}) {
-    {console.log(items)}
+
     return (
         <>
             <div className='carousel'>
