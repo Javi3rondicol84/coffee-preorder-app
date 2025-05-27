@@ -1,0 +1,55 @@
+.banner {
+    width: 100%;
+    height: 8em;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 2s ease-in;
+}
+
+.buttons {
+    height: 2em;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons button {
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 1em;
+    background-color: var(--white-color);
+    border: 0.1em solid var(--black-color);
+    cursor: pointer;
+    margin: 0 1em 0 1em;
+}
+
+.buttons button:focus {
+    background-color: var(--primary-color);
+}
+
+.buttons button:hover {
+    background-color: var(--primary-color);
+}
+
+@media only screen and (min-width: 600px) {
+    .banner {
+        height: 24em;
+    }
+
+    .button button {
+        width: 1.5em;
+        height: 1.5em;
+        margin: 0 0.5em 0 0.5em;
+    }
+
+}
