@@ -20,11 +20,15 @@ nav {
 nav .logo-title {
     width: auto;
     height: auto;
-    color: var(--text-titles-color);
     margin-left: 1em;
 }
 
-nav .logo-title h1 {
+nav .logo-title a {
+    text-decoration: none;
+    color: var(--text-titles-color);
+}
+
+nav .logo-title a h1 {
     font-family: var(--title-font);
 }
 

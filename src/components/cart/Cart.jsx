@@ -7,7 +7,9 @@ export default function Cart() {
     const [cartItems, setCartItems] = useState(CART);
     const [totalPrice, setTotalPrice] = useState(10000);
 
-
+    function handleRedirect() {
+        window.location.href = '/'
+    }
         
     return (
         <div className="cart-menu">
@@ -36,7 +38,7 @@ export default function Cart() {
                         <span>Total: ${totalPrice}</span>
                     </div>
                     <div className='purchase-btn'>
-                        <button><span>Begin Purchase</span></button>
+                        <button onClick={handleRedirect}><span>Begin Purchase</span></button>
                     </div>
                 </div>
       

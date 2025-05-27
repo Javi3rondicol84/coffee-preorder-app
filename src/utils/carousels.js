@@ -75,6 +75,41 @@ export const CAROUSELS = [
                 description: 'Granos frescos para moler y preparar al gusto.',
                 price: 5300,
                 img: cardImgGeneric
+            },
+            {
+                id: 11,
+                title: 'Arlistán Suave 250gr',
+                description: 'Café suave ideal para desayunos ligeros.',
+                price: 2200,
+                img: cardImgGeneric
+            },
+            {
+                id: 12,
+                title: 'Cabrales Descafeinado 250gr',
+                description: 'Café sin cafeína, mantiene el sabor original.',
+                price: 3000,
+                img: cardImgGeneric
+            },
+            {
+                id: 13,
+                title: 'Nescafé Dolca Intenso 170gr',
+                description: 'Café instantáneo con sabor fuerte y aroma duradero.',
+                price: 2100,
+                img: cardImgGeneric
+            },
+            {
+                id: 14,
+                title: 'Tostado La Virginia 500gr',
+                description: 'Café molido con notas dulces y baja acidez.',
+                price: 2300,
+                img: cardImgGeneric
+            },
+            {
+                id: 15,
+                title: 'Colombia Exportación 250gr',
+                description: 'Café colombiano de origen controlado.',
+                price: 3900,
+                img: cardImgGeneric
             }
         ]
     },
