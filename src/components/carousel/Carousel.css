@@ -9,6 +9,10 @@
   visibility: hidden;
 }
 
+.cart-img button {
+  visibility: visible;
+}
+
 .cards {
   display: flex;
   transition: transform 0.25s ease-in-out;
@@ -46,6 +50,7 @@
   .card {
     flex: 0 0 100%;
   }
+  
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
