@@ -1,7 +1,7 @@
 import './Home.css';
 import { CAROUSELS } from '../../utils/carousels.js';
 import Carousel from '../../components/carousel/Carousel.jsx';
-import ImgCarousel from '../../components/imgCarousel/imgCarousel.jsx';
+import ImgCarousel from '../../components/imgCarousel/ImgCarousel.jsx';
 
 export default function Home() {
     return (
