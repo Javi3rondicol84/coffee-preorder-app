@@ -4,7 +4,7 @@ const BASE_URL = 'http://localhost:3000/api';
 
 export const fetchProducts = async () => {
     try {
-        const response = await axios.get(BASE_URL+'/category/products/');
+        const response = await axios.get(BASE_URL+'/category/products/?limit=20');
         return response.data;
     }
     catch(error) {  
