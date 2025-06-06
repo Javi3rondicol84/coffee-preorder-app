@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import blackCart from '../../assets/images/black-cart.svg';
 import selectedCart from '../../assets/images/selectedCart.svg';
+import img from '../../assets/images/imgsCarousel/2.webp';
 import './Card.css';
 
-export default function Card( {id, title, description, price, img} ) {
+export default function Card( {description, imgPath, price, productId, productName} ) {
     const [selected, setSelected] = useState(false);
 
     function handleSelected() {
@@ -22,7 +23,7 @@ export default function Card( {id, title, description, price, img} ) {
                     <img src={img} alt="img-card" />
                 </div>
                 <div className='card-title'>
-                    <h3>{title}</h3>
+                    <h3>{productName}</h3>
                 </div>
                 <div className='card-price'>
                     <span>${price}</span>

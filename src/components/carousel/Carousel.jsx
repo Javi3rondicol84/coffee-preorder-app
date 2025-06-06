@@ -4,13 +4,13 @@ import leftArrowImg from '../../assets/images/left-arrow.svg';
 import rightArrowImg from '../../assets/images/right-arrow.svg';
 import { useState } from 'react';
 
-export default function Carousel( {id, title, items}) {
+export default function Carousel( {categoryId, categoryName, Products}) {
     const [startX, setStartX] = useState(0);
     const [endX, setEndX] = useState(0);
     const [currentSlide, setCurrentSlide] = useState(0);
     const maxCardsPerPage = 5;
     
-    const totalSlides = Math.ceil(items.length / maxCardsPerPage);
+    const totalSlides = Math.ceil(Products.length / maxCardsPerPage);
 
     function handleSlides(direction) {
         if(direction === 'left') {
@@ -40,15 +40,14 @@ export default function Carousel( {id, title, items}) {
         }
     }
 
-
-
-
  //-50% mover 5 cards hacia la izquierda. 50% mover 5 cards a la derecha
-    return (
+
+    if(Products.length > 0) {
+        return (
         <>
             <div className='carousel'>
                 <div className='title'>
-                    <h2>Most popular {title}</h2>
+                    <h2>Most popular {categoryName}</h2>
                 </div>
                 <button disabled={currentSlide === 0} className='btn-left' onClick={() => handleSlides('left')}><img src={leftArrowImg} alt='left-arrow'/></button>
                 <button disabled={currentSlide === (totalSlides - 1)} className='btn-right' onClick={() => handleSlides('right')}><img src={rightArrowImg} alt='right-arrow'/></button>
@@ -62,14 +61,15 @@ export default function Carousel( {id, title, items}) {
                     }
                 }>
 
-                    { items.map((item) => (
-                        <Card key={item.id} {...item} />
+                    { Products.map((product) => (
+                        <Card key={product.productId} {...product} />
                     ))}
 
                 </div>
             </div>
 
         </>
+        );
+    }
 
-    );
 }
